@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Student List</title>
+    <link rel="stylesheet" href="">
+    <style>
+        #_id{
+            visibility: hidden;
+            position: absolute;
+        }
+        #button{
+            position: absolute;
+        }
+        </style>
+</head>
+
+<body>
+        <h1>student list</h1>
+
+<% for (i = studentList.length - 1; i >= 0; i--) { %>
+    <form method='POST' action='/submit' id="form">    
+<h2 >Name:<strong><%=studentList[i].name%></strong></h1>
+<h2 id="content">Email:<%=studentList[i].email%></p>
+    <input type="text" placeholder="present/absent" name="attend">
+    <button id="button">submit attendence</button>
+  <input type="text" id="_id" name="_id" value="<%=studentList[i]._id%>">  <br>
+</form>
+<%}%>
+
+
+
+    </body>
+    </html>

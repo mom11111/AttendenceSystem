@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="registerform.css">
+  </head>
+<body>
+<h1>teacher register here</h1>
+<form method='POST' action='/add_teacher' id="form">
+  <input type="text" name="name" placeholder="name" id="name"><br>
+  <input type="text" name="email" placeholder="email" id="email"><br>
+  <input type="text" name="number" placeholder="mobile" id="phone"> <br>
+  <input type="text" name="city" placeholder="city" id="city"><br>
+  <input type="password" name="password" placeholder="password" id="password"> <br>
+  <button   id="button">submit</button>
+</form>
+
+<form method="GET" action="/teacher_login" id="form">
+<button id="button">go to login</button>
+</form>
+
+<form method="GET" action="/student_register" id="form">
+  <h1>if you are a student</h1>
+  <button id="button">student register here</button>
+  </form>
+
+<div id="music">
+    <audio controls autoplay loop>
+        <source src="gana.mp3">
+    </audio> 
+</div>
+
+</body>
+</html>
